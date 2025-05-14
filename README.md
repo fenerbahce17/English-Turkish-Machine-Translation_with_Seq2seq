@@ -31,7 +31,7 @@ Input → GloVe Embedding → 3x GRU(256) → Context Vector
 
 Decoder
 Input → Embedding → 3x GRU(256) → Dense(94,058) 
-GRU chosen over LSTM for faster training
+GRU 
 
 Teacher forcing during training
 # Training

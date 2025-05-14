@@ -1,6 +1,6 @@
 # English-Turkish-Machine-Translation_with_Seq2seq
 
-# Core Methodology
+
 # Sequence-to-Sequence Architecture
 
 Encoder: Processes English input (reversed) → generates context vector

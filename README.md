@@ -1,1 +1,45 @@
 # English-Turkish-Machine-Translation_with_Seq2seq
+
+Core Methodology
+Sequence-to-Sequence Architecture
+
+Encoder: Processes English input (reversed) → generates context vector
+
+Decoder: Generates Turkish tokens sequentially using context
+
+Key NLP Techniques
+
+Tokenization:
+
+Custom TokenizerWrap class with start (ssss)/end (eeee) markers
+
+Sentence reversal for English inputs (improves short-term dependencies)
+
+Padding to fixed length (11 tokens for EN, 10 for TR)
+
+Embedding Layer
+
+GloVe 100D vectors for English words (transfer learning)
+
+Random initialization for Turkish words (94,058 unique tokens)
+
+Model Architecture
+
+python
+# Encoder
+Input → GloVe Embedding → 3x GRU(256) → Context Vector
+
+# Decoder
+Input → Embedding → 3x GRU(256) → Dense(94,058) 
+GRU chosen over LSTM for faster training
+
+Teacher forcing during training
+Training
+
+Loss: Sparse Categorical Cross-Entropy
+
+Optimizer: RMSprop (lr=1e-3)
+
+Batch Size: 64
+
+Epochs: 2 (limited by computational resources)

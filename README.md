@@ -44,4 +44,4 @@ Optimizer: RMSprop (lr=1e-3)
 
 Batch Size: 64
 
-Epochs: 2 (limited by computational resources)
+

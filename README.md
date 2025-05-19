@@ -1,6 +1,6 @@
 # Halil Yeşilağaç NlP Projesi
 # English-Turkish-Machine-Translation_with_Seq2seq
-Bu projede Seq2seq ile İngilizce'den Türkçe ye makine çevirisi uygulaması yaptım.İpynb adlı dosya uzantımda model kodlarım yer almaktadır. Aşağıda ve Ayrıntılı Rapor ve Çalışma Mantığı.doc dosyasında ayrıntılar bulunmaktadır.
+Bu projede Seq2seq ile İngilizce'den Türkçe ye makine çevirisi uygulaması yaptım.İpynb adlı dosya uzantımda model kodlarım yer almaktadır. Aşağıda ve AyrıntılıRaporveÇalışmaMantığı.doc dosyasında ayrıntılar bulunmaktadır.
 Kullanılan Dataset:https://www.manythings.org/anki/
 
 
